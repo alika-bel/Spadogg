@@ -47,7 +47,6 @@ body {
   gap: 342px;
 }
 
-
 .hero-content {
   padding-top: 150px;
   padding-bottom: 365px;
@@ -71,10 +70,10 @@ body {
   padding: 15px 80px;
   border-radius: 5px;
 }
-.hero-button:hover{
-cursor: pointer;
-background-color: #b2ffa6c8;
-font-style: oblique;
+.hero-button:hover {
+  cursor: pointer;
+  background-color: #b2ffa6c8;
+  font-style: oblique;
 }
 
 /* Секція about */
@@ -83,7 +82,7 @@ font-style: oblique;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.about-container{
+.about-container {
   display: flex;
   gap: 78px;
   align-items: center;
@@ -97,10 +96,10 @@ font-style: oblique;
 .about-text {
   font-size: 32px;
 }
-.about-text:first-of-type{
+.about-text:first-of-type {
   margin-bottom: 40px;
 }
-.about-text:last-of-type{
+.about-text:last-of-type {
   margin-bottom: 60px;
 }
 .about-link {
@@ -111,23 +110,42 @@ font-style: oblique;
   background-color: #b2ffa6;
   font-family: var(--font-secondary);
   text-decoration: none;
-
 }
 /* Секція features */
-.features-container{
+.features-container {
   display: flex;
   gap: 174px;
   align-items: center;
 }
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 115px;
+  row-gap: 88px;
+}
+.features-item {
+  max-width: 407px;
+}
 .features-title {
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 32px;
   text-transform: capitalize;
 }
+/* Секція services */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
 .services {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--color-bg-section);
 }
 .services-title {
+  margin-bottom: 40px;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
@@ -137,8 +155,16 @@ font-style: oblique;
 .services-text {
   font-size: 32;
   text-align: center;
+  max-width: 1346px;
 }
-
+.services-list {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+.services-photo {
+  margin-bottom: 25px;
+}
 .services-name {
   font-weight: 600;
 }
@@ -149,13 +175,27 @@ font-style: oblique;
   padding: 15px 80px;
   cursor: pointer;
 }
+/* Секція footer */
 .footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
   background-color: var(--color-bg-primary);
 }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .logo-img {
-  width: 78px;
+  max-width: 78px;
+}
+.logo-text{
+  font-size: 40px;
 }
 .logo {
+  gap: 50px;
+  display: flex;
+  align-items: center;
   font-size: 40;
   font-weight: 300;
   color: var(--color-text-contrast);
